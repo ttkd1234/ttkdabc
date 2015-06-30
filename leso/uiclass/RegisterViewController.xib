@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3H-o7-TqI" userLabel="手机号">
+                    <rect key="frame" x="61" y="106" width="475" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login_tel.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwF-mu-VKD">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="Qde-St-whq"/>
+                                <constraint firstAttribute="height" constant="33" id="z7N-YH-TTh"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textline.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jbf-b5-CdG">
+                            <rect key="frame" x="32" y="1" width="1" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="byf-Ed-gls"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-ow-ohP" userLabel="手机号">
+                            <rect key="frame" x="32" y="2" width="169" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWw-2f-KHV" userLabel="手机号背景">
+                            <rect key="frame" x="0.0" y="1" width="475" height="33"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="WDt-r4-SC6"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="4TJ-2S-KTe"/>
+                        <constraint firstAttribute="trailing" secondItem="yuT-ow-ohP" secondAttribute="trailing" constant="10" id="5ZN-ob-LUH"/>
+                        <constraint firstAttribute="trailing" secondItem="mWw-2f-KHV" secondAttribute="trailing" id="7AA-uj-7YD"/>
+                        <constraint firstItem="lwF-mu-VKD" firstAttribute="leading" secondItem="r3H-o7-TqI" secondAttribute="leading" id="CgD-y4-kg9"/>
+                        <constraint firstItem="Jbf-b5-CdG" firstAttribute="leading" secondItem="lwF-mu-VKD" secondAttribute="trailing" constant="-1" id="MZD-mc-UeF"/>
+                        <constraint firstItem="yuT-ow-ohP" firstAttribute="leading" secondItem="Jbf-b5-CdG" secondAttribute="trailing" constant="6" id="O8e-Sp-olG"/>
+                        <constraint firstItem="mWw-2f-KHV" firstAttribute="leading" secondItem="r3H-o7-TqI" secondAttribute="leading" id="ysx-aX-f82"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZm-qJ-38R" userLabel="密码框">
+                    <rect key="frame" x="61" y="164" width="475" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login.png" translatesAutoresizingMaskIntoConstraints="NO" id="EkN-dK-CaA" userLabel="密码框背景">
+                            <rect key="frame" x="0.0" y="1" width="475" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="Wmb-iB-ZVK"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login_pas.png" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-ep-1l3">
+                            <rect key="frame" x="-2" y="0.0" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="0W2-oF-UG1"/>
+                                <constraint firstAttribute="width" constant="33" id="vZg-ol-m7F"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textline.png" translatesAutoresizingMaskIntoConstraints="NO" id="gcu-jN-bOT">
+                            <rect key="frame" x="31" y="1" width="1" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="JuQ-uY-CUd"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-dE-UCa" userLabel="密码框">
+                            <rect key="frame" x="33" y="2" width="170" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstItem="gcu-jN-bOT" firstAttribute="leading" secondItem="GoQ-ep-1l3" secondAttribute="trailing" constant="-1" id="17Z-c6-1Pg"/>
+                        <constraint firstItem="GoQ-ep-1l3" firstAttribute="leading" secondItem="TZm-qJ-38R" secondAttribute="leading" id="9Mk-Mw-L4o"/>
+                        <constraint firstAttribute="trailing" secondItem="Ued-dE-UCa" secondAttribute="trailing" constant="10" id="GX7-IW-y9C"/>
+                        <constraint firstItem="EkN-dK-CaA" firstAttribute="leading" secondItem="TZm-qJ-38R" secondAttribute="leading" id="Iuq-v8-Wzc"/>
+                        <constraint firstAttribute="trailing" secondItem="EkN-dK-CaA" secondAttribute="trailing" id="O6b-Ct-ATG"/>
+                        <constraint firstAttribute="height" constant="33" id="i7F-8v-QTY"/>
+                        <constraint firstItem="Ued-dE-UCa" firstAttribute="leading" secondItem="gcu-jN-bOT" secondAttribute="trailing" constant="6" id="nRj-ni-ENy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FC-c0-cIH">
+                    <rect key="frame" x="61" y="259" width="475" height="33"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="bVW-vM-FUe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="注 册" backgroundImage="Bund.bundle/images/login_bt.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TZm-qJ-38R" secondAttribute="trailing" constant="30" id="02H-LV-kR0"/>
+                <constraint firstAttribute="trailing" secondItem="1FC-c0-cIH" secondAttribute="trailing" constant="30" id="4vS-Kt-VZf"/>
+                <constraint firstItem="1FC-c0-cIH" firstAttribute="top" secondItem="TZm-qJ-38R" secondAttribute="bottom" constant="40" id="Fjv-rs-wBT"/>
+                <constraint firstItem="r3H-o7-TqI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="HQt-5z-cSz"/>
+                <constraint firstItem="TZm-qJ-38R" firstAttribute="top" secondItem="r3H-o7-TqI" secondAttribute="bottom" constant="20" id="TGc-Oi-sFd"/>
+                <constraint firstAttribute="trailing" secondItem="r3H-o7-TqI" secondAttribute="trailing" constant="30" id="WT1-wU-KYg"/>
+                <constraint firstItem="r3H-o7-TqI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="Xkz-Ne-x85"/>
+                <constraint firstItem="TZm-qJ-38R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="YtP-rg-vj6"/>
+                <constraint firstItem="1FC-c0-cIH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="kq0-Zq-DRA"/>
+            </constraints>
+            <point key="canvasLocation" x="435" y="213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bund.bundle/images/login.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_bt.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_pas.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_tel.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/textline.png" width="360" height="480"/>
+    </resources>
+</document>

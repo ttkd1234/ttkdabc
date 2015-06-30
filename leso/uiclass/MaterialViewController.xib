@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaterialViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7G-bA-DUr">
+                    <rect key="frame" x="59" y="199" width="475" height="36"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="vFS-Ub-6Z2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="提 交" backgroundImage="Bund.bundle/images/login_bt.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-ve-iqg" userLabel="邮箱">
+                    <rect key="frame" x="55" y="127" width="475" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="0QF-km-uh7" userLabel="邮箱背景">
+                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="邮箱：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vp-dy-8iq" userLabel="邮箱标签">
+                            <rect key="frame" x="2" y="5" width="44" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-tv-KbQ" userLabel="邮箱输入框">
+                            <rect key="frame" x="41" y="0.0" width="169" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstItem="0QF-km-uh7" firstAttribute="leading" secondItem="gyO-ve-iqg" secondAttribute="leading" id="0gi-Ua-fr4"/>
+                        <constraint firstAttribute="height" constant="33" id="COJ-It-qsg"/>
+                        <constraint firstItem="OMw-tv-KbQ" firstAttribute="leading" secondItem="6Vp-dy-8iq" secondAttribute="trailing" id="Egk-8h-bbB"/>
+                        <constraint firstAttribute="trailing" secondItem="0QF-km-uh7" secondAttribute="trailing" id="K4A-eu-HbD"/>
+                        <constraint firstItem="6Vp-dy-8iq" firstAttribute="leading" secondItem="gyO-ve-iqg" secondAttribute="leading" id="Ki3-wG-IJf"/>
+                        <constraint firstAttribute="trailing" secondItem="OMw-tv-KbQ" secondAttribute="trailing" constant="10" id="fZZ-Ju-vTl"/>
+                        <constraint firstItem="0QF-km-uh7" firstAttribute="top" secondItem="gyO-ve-iqg" secondAttribute="top" constant="32" id="v5g-TL-bHZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gyO-ve-iqg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="3QU-qs-kpp"/>
+                <constraint firstAttribute="trailing" secondItem="gyO-ve-iqg" secondAttribute="trailing" constant="30" id="Lgg-El-nzC"/>
+                <constraint firstAttribute="trailing" secondItem="U7G-bA-DUr" secondAttribute="trailing" constant="30" id="OjG-P9-27n"/>
+                <constraint firstItem="U7G-bA-DUr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="hvd-Bk-p6q"/>
+                <constraint firstItem="U7G-bA-DUr" firstAttribute="top" secondItem="gyO-ve-iqg" secondAttribute="bottom" constant="30" id="tjS-9b-2of"/>
+                <constraint firstItem="gyO-ve-iqg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="vhO-a8-Bbz"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bund.bundle/images/login_bt.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/textview_line.png" width="360" height="480"/>
+    </resources>
+</document>

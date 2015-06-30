@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrViewController">
+            <connections>
+                <outlet property="pageScroll" destination="YDU-Vc-1KO" id="kzx-gM-9tI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YDU-Vc-1KO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/page01.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVe-4y-TG3">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="571"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/page03.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wi7-rS-b2X">
+                            <rect key="frame" x="600" y="0.0" width="600" height="323"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GD-A0-Eft">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bund.bundle/images/page03.png" translatesAutoresizingMaskIntoConstraints="NO" id="4wu-HM-pMl">
+                                    <rect key="frame" x="8" y="8" width="300" height="300"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7H-r3-HXc">
+                                    <rect key="frame" x="206" y="230" width="46" height="30"/>
+                                    <state key="normal" title="进入">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inMain:" destination="-1" eventType="touchUpInside" id="pS2-CK-ZlZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Wi7-rS-b2X" secondAttribute="bottom" id="0Ge-ME-G85"/>
+                        <constraint firstItem="uVe-4y-TG3" firstAttribute="top" secondItem="YDU-Vc-1KO" secondAttribute="top" id="BeH-eM-43i"/>
+                        <constraint firstItem="Wi7-rS-b2X" firstAttribute="leading" secondItem="YDU-Vc-1KO" secondAttribute="leading" id="F6O-MC-TLi"/>
+                        <constraint firstAttribute="bottom" secondItem="uVe-4y-TG3" secondAttribute="bottom" id="eji-R3-kxY"/>
+                        <constraint firstAttribute="trailing" secondItem="uVe-4y-TG3" secondAttribute="trailing" id="jJU-7F-Mnr"/>
+                        <constraint firstAttribute="trailing" secondItem="Wi7-rS-b2X" secondAttribute="trailing" id="oNV-9D-vEJ"/>
+                        <constraint firstItem="uVe-4y-TG3" firstAttribute="leading" secondItem="YDU-Vc-1KO" secondAttribute="leading" id="pIU-aV-UiR"/>
+                        <constraint firstItem="Wi7-rS-b2X" firstAttribute="top" secondItem="YDU-Vc-1KO" secondAttribute="top" id="sRs-bG-o5h"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bund.bundle/images/page01.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/page03.png" width="360" height="480"/>
+    </resources>
+</document>
