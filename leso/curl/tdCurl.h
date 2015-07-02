@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "curlProtocol.h"
-#include "_curl/curl.h"
+#import "curlProtocol.h"
+#import "_curl/curl.h"
 @interface tdCurl : NSObject
 {
   id<curProtocol> mdelegate;
