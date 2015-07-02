@@ -15,5 +15,4 @@
 @interface MTViewController : ConViewController<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, retain) NSDictionary *lt;
 
-
 @end
