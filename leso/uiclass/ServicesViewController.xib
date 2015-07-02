@@ -15,59 +15,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" directionalLockEnabled="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" minimumZoomScale="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="alU-Jg-8QK">
-                    <rect key="frame" x="0.0" y="-100" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="-1" width="600" height="600"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="禁寄物品是指国家法律、法规禁止寄递的物品，主要包括：" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNT-no-vJy">
-                            <rect key="frame" x="10" y="14" width="562" height="26"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="寄件方式：" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNT-no-vJy">
+                            <rect key="frame" x="11" y="21" width="337" height="17"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="352" id="WFS-Hb-ZhM"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="STSongti-SC-Bold" family="Songti SC" pointSize="16"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.08235294118" green="0.61960784310000006" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <size key="shadowOffset" width="6" height="0.0"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(1)各类武器、弹药，如枪支、弹药、炮弹、手榴弹、地雷、炸弹等。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-TX-jzx">
-                            <rect key="frame" x="11" y="48" width="428" height="28"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="方式一：请您拨打您所在地取件公司的电话，提供寄递物品的品名、重量、取件地址、取件人、取件人联系方式等相关取件信息，我们会安排业务员上门取件。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-TX-jzx">
+                            <rect key="frame" x="11" y="57" width="570" height="47"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="352" id="wIL-to-QMn"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(2)各类以爆炸性物品，如雷管、炸药、鞭炮等。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oca-kZ-ICL">
-                            <rect key="frame" x="11" y="83" width="331" height="27"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="352" id="RIl-hb-CKc"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(3)各类易燃烧性物品、包括液体、气体和固体，如汽油 、煤油、桐油、酒精、生漆、柴油、气雾剂、气体打火机、瓦斯气瓶、硫、硫磺、火柴等。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9x-iM-Eba">
-                            <rect key="frame" x="11" y="118" width="564" height="42"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="352" id="aRm-sp-I4m"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(4)各类易腐蚀性物品，如火硫酸、盐酸、有机溶剂、农药、双氧水、危险化学品等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-1k-fz0">
-                            <rect key="frame" x="11" y="164" width="564" height="38"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="352" id="D8g-6a-TC7"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(5)各类放射性元素及容器，如铀、钴、锡、钚等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="115-eL-Xx0">
-                            <rect key="frame" x="11" y="199" width="360" height="26"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="352" id="OrX-QI-ykV"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(6)各类烈性元素及容器，如铊、氯化物、砒霜等。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk0-AV-5bO">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(2)根据界面提示内容，填写详细资料后，点击&quot;保存信息&quot;" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk0-AV-5bO">
                             <rect key="frame" x="10" y="238" width="428" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="352" id="IrV-PR-FBQ"/>
@@ -75,7 +43,7 @@
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(7)各类麻醉药物，如鸦片(包括罂粟壳、花、苞、叶)、吗啡、可卡因、海洛因、大麻、麻黄素及其它制品等。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAj-Se-xRt">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(3)点击后，会有诸多物流公司供卖家选择，您只要在选择的物流公司后点击&quot;选择&quot;即可；" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAj-Se-xRt">
                             <rect key="frame" x="10" y="274" width="564" height="42"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="352" id="zha-Md-q2Q"/>
@@ -83,7 +51,7 @@
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(8)各类化制品和传染性物品，如炭疽、危险性病菌、医药用废物等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzf-OI-xO6">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(4)点击&quot;选择&quot;后，客户无需输入&quot;运单号&quot;,直接点击&quot;确定&quot;即可；如有运单号码，直接填入。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzf-OI-xO6">
                             <rect key="frame" x="10" y="320" width="564" height="27"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="352" id="9ag-sd-WMP"/>
@@ -91,7 +59,7 @@
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(9)各类危害国家安全和社会政治稳定以及淫秽的出版物、宣传品、印刷品等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKs-W8-oNj">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(5)确定后进入完成界面。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKs-W8-oNj">
                             <rect key="frame" x="10" y="355" width="488" height="33"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="352" id="ZNo-S2-sWD"/>
@@ -99,106 +67,76 @@
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(10)各种妨害公共卫生的物品，如尸骨、动物器官、肢体、未经硝制的兽皮、未经药制的兽骨等。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-zD-wf1">
-                            <rect key="frame" x="8" y="396" width="564" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(1)进入淘宝网后，点击&quot;我的淘宝&quot;进入下一个界面；点&quot;交易管理&quot;----&quot;我有货物要运输&quot;----OK;" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="115-eL-Xx0">
+                            <rect key="frame" x="11" y="195" width="570" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="352" id="pkm-z9-xEY"/>
+                                <constraint firstAttribute="width" constant="352" id="OrX-QI-ykV"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(11)国家法律、法规、行政规章明令禁止流通、寄递或进出境的物品，如国家秘密文件和资料、国家货币及伪造的货币和有价证券、仿真武器、管制刀具、珍贵文物、病危野生动物及其制品等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIH-L7-Q53">
-                            <rect key="frame" x="8" y="439" width="564" height="38"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="方式二：如果您是电商客户，可选择在线下单。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9x-iM-Eba">
+                            <rect key="frame" x="11" y="113" width="564" height="33"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="352" id="Kea-SY-Hs5"/>
+                                <constraint firstAttribute="width" constant="352" id="aRm-sp-I4m"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(12)包装不妥，可能危害人身安全、污染或者损毁其他寄递件、设备的物品等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYD-Yq-5oF">
-                            <rect key="frame" x="8" y="477" width="488" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="在淘宝网上下单：" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-1k-fz0">
+                            <rect key="frame" x="11" y="149" width="564" height="38"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="352" id="3RG-mw-NSw"/>
+                                <constraint firstAttribute="width" constant="352" id="D8g-6a-TC7"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(14)其他禁止寄递的物品" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-Ot-02r">
-                            <rect key="frame" x="10" y="540" width="488" height="25"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="352" id="heb-AN-XI5"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(13)各寄达过(地区)禁止寄递进口的物品等。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toR-eD-2cJ">
-                            <rect key="frame" x="10" y="513" width="488" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="352" id="zv0-Pk-oWj"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="13"/>
+                            <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="16"/>
+                            <color key="textColor" red="0.08235294118" green="0.61960784310000006" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.90196078430000004" green="0.89411764709999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="SlF-TX-jzx" secondAttribute="trailing" id="06Q-1y-Av8"/>
                         <constraint firstAttribute="trailing" secondItem="JNT-no-vJy" secondAttribute="trailing" id="0D4-kA-O6p"/>
-                        <constraint firstItem="H8G-1k-fz0" firstAttribute="top" secondItem="E9x-iM-Eba" secondAttribute="bottom" constant="10" id="0Re-TQ-gSe"/>
                         <constraint firstItem="Zzf-OI-xO6" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="0Wo-g5-yom"/>
                         <constraint firstAttribute="trailing" secondItem="WAj-Se-xRt" secondAttribute="trailing" id="3Qc-Ji-a4m"/>
                         <constraint firstItem="Zzf-OI-xO6" firstAttribute="top" secondItem="WAj-Se-xRt" secondAttribute="bottom" constant="10" id="4Aq-EX-apF"/>
                         <constraint firstItem="WAj-Se-xRt" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="4n8-lS-REB"/>
-                        <constraint firstItem="E9x-iM-Eba" firstAttribute="top" secondItem="oca-kZ-ICL" secondAttribute="bottom" constant="10" id="4xa-sI-7F3"/>
-                        <constraint firstItem="ZIH-L7-Q53" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="79Z-xJ-T7Q"/>
                         <constraint firstItem="XKs-W8-oNj" firstAttribute="top" secondItem="Zzf-OI-xO6" secondAttribute="bottom" constant="10" id="8H2-qs-gGv"/>
-                        <constraint firstItem="ZIH-L7-Q53" firstAttribute="top" secondItem="UhT-zD-wf1" secondAttribute="bottom" constant="10" id="944-ax-N9K"/>
                         <constraint firstAttribute="trailing" secondItem="Zzf-OI-xO6" secondAttribute="trailing" id="9Oj-SQ-Npv"/>
                         <constraint firstAttribute="trailing" secondItem="JNT-no-vJy" secondAttribute="trailing" id="CGv-Bg-3Q4"/>
-                        <constraint firstItem="oca-kZ-ICL" firstAttribute="top" secondItem="SlF-TX-jzx" secondAttribute="bottom" id="CKg-ep-ojv"/>
                         <constraint firstItem="WAj-Se-xRt" firstAttribute="top" secondItem="wk0-AV-5bO" secondAttribute="bottom" constant="10" id="Fkb-gE-npG"/>
                         <constraint firstItem="SlF-TX-jzx" firstAttribute="top" secondItem="JNT-no-vJy" secondAttribute="bottom" id="K9v-OM-Toa"/>
-                        <constraint firstAttribute="trailing" secondItem="ZIH-L7-Q53" secondAttribute="trailing" id="KBW-Vs-pgX"/>
                         <constraint firstAttribute="trailing" secondItem="SlF-TX-jzx" secondAttribute="trailing" id="PUC-Qx-a9u"/>
                         <constraint firstItem="E9x-iM-Eba" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="Pmv-TV-PhC"/>
-                        <constraint firstItem="toR-eD-2cJ" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="R1E-Au-h2e"/>
-                        <constraint firstItem="UhT-zD-wf1" firstAttribute="top" secondItem="XKs-W8-oNj" secondAttribute="bottom" constant="10" id="RQh-Fj-DpN"/>
                         <constraint firstItem="JNT-no-vJy" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="UDG-qF-CRE"/>
-                        <constraint firstAttribute="trailing" secondItem="sXV-Ot-02r" secondAttribute="trailing" id="Upz-EA-l18"/>
-                        <constraint firstItem="UYD-Yq-5oF" firstAttribute="top" secondItem="ZIH-L7-Q53" secondAttribute="bottom" constant="10" id="W1W-ZE-Yt9"/>
-                        <constraint firstAttribute="trailing" secondItem="UhT-zD-wf1" secondAttribute="trailing" id="WHG-uN-LVL"/>
                         <constraint firstAttribute="trailing" secondItem="wk0-AV-5bO" secondAttribute="trailing" id="Yaw-Z0-3wZ"/>
-                        <constraint firstItem="toR-eD-2cJ" firstAttribute="top" secondItem="UYD-Yq-5oF" secondAttribute="bottom" constant="10" id="Yod-GW-imH"/>
-                        <constraint firstItem="oca-kZ-ICL" firstAttribute="top" secondItem="SlF-TX-jzx" secondAttribute="bottom" constant="10" id="aCk-TR-H2t"/>
-                        <constraint firstAttribute="trailing" secondItem="oca-kZ-ICL" secondAttribute="trailing" id="amc-W9-iQP"/>
-                        <constraint firstItem="oca-kZ-ICL" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="arY-dk-HmB"/>
                         <constraint firstAttribute="trailing" secondItem="XKs-W8-oNj" secondAttribute="trailing" id="dcU-uQ-yD2"/>
                         <constraint firstItem="XKs-W8-oNj" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="e5l-4R-nj2"/>
                         <constraint firstAttribute="trailing" secondItem="H8G-1k-fz0" secondAttribute="trailing" id="eYO-sh-rB4"/>
                         <constraint firstItem="SlF-TX-jzx" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="h0M-rJ-nTz"/>
+                        <constraint firstItem="E9x-iM-Eba" firstAttribute="top" secondItem="SlF-TX-jzx" secondAttribute="bottom" constant="10" id="i1c-fi-ZQD"/>
                         <constraint firstItem="wk0-AV-5bO" firstAttribute="top" secondItem="115-eL-Xx0" secondAttribute="bottom" constant="10" id="iDe-ml-UOv"/>
                         <constraint firstItem="115-eL-Xx0" firstAttribute="top" secondItem="H8G-1k-fz0" secondAttribute="bottom" constant="10" id="ix5-5m-dk0"/>
-                        <constraint firstAttribute="trailing" secondItem="UYD-Yq-5oF" secondAttribute="trailing" id="j28-f6-dBj"/>
-                        <constraint firstItem="UhT-zD-wf1" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="jCh-tl-XW9"/>
-                        <constraint firstItem="sXV-Ot-02r" firstAttribute="top" secondItem="toR-eD-2cJ" secondAttribute="bottom" constant="10" id="jQE-c6-F0D"/>
                         <constraint firstAttribute="trailing" secondItem="115-eL-Xx0" secondAttribute="trailing" id="joM-7m-8S7"/>
-                        <constraint firstItem="sXV-Ot-02r" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="kDf-Ot-j0n"/>
                         <constraint firstItem="JNT-no-vJy" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="kjQ-rE-TmK"/>
                         <constraint firstItem="wk0-AV-5bO" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="n25-0o-iPh"/>
-                        <constraint firstAttribute="trailing" secondItem="toR-eD-2cJ" secondAttribute="trailing" id="od9-Qc-2wL"/>
-                        <constraint firstItem="SlF-TX-jzx" firstAttribute="top" secondItem="JNT-no-vJy" secondAttribute="bottom" constant="20" id="ooD-fv-I8x"/>
+                        <constraint firstItem="SlF-TX-jzx" firstAttribute="top" secondItem="JNT-no-vJy" secondAttribute="bottom" constant="10" id="ooD-fv-I8x"/>
                         <constraint firstItem="SlF-TX-jzx" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="pHZ-6U-lSw"/>
                         <constraint firstItem="H8G-1k-fz0" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="scL-rT-Pq6"/>
-                        <constraint firstItem="JNT-no-vJy" firstAttribute="top" secondItem="alU-Jg-8QK" secondAttribute="top" id="uXH-qH-Koc"/>
-                        <constraint firstItem="UYD-Yq-5oF" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="vCX-dp-osH"/>
-                        <constraint firstItem="oca-kZ-ICL" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="vxk-XU-O40"/>
-                        <constraint firstAttribute="trailing" secondItem="oca-kZ-ICL" secondAttribute="trailing" id="wp5-ZS-86p"/>
+                        <constraint firstItem="H8G-1k-fz0" firstAttribute="top" secondItem="E9x-iM-Eba" secondAttribute="bottom" constant="10" id="so2-cC-rG7"/>
+                        <constraint firstItem="JNT-no-vJy" firstAttribute="top" secondItem="alU-Jg-8QK" secondAttribute="top" constant="20" id="t5U-26-aEx"/>
                         <constraint firstItem="115-eL-Xx0" firstAttribute="leading" secondItem="alU-Jg-8QK" secondAttribute="leading" id="wpl-4x-oWy"/>
                         <constraint firstAttribute="trailing" secondItem="E9x-iM-Eba" secondAttribute="trailing" id="yvu-gq-3oW"/>
                     </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="alU-Jg-8QK" secondAttribute="bottom" constant="30" id="35e-qM-zQb"/>
+                <constraint firstItem="alU-Jg-8QK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="JcA-CV-ddJ"/>
+                <constraint firstItem="alU-Jg-8QK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Jff-YE-nJb"/>
+                <constraint firstAttribute="trailing" secondItem="alU-Jg-8QK" secondAttribute="trailing" constant="10" id="sxa-RW-gzJ"/>
+            </constraints>
         </view>
     </objects>
 </document>

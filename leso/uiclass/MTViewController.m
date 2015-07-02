@@ -19,7 +19,7 @@
 {
     self = [super init];
     if (self) {
-        self.title = @"首页";
+    self.title = @"首页";
     }
     return self;
 }
@@ -74,19 +74,23 @@
     
     //这是设置没选中之前的背景颜色
     cell.contentView.backgroundColor = [UIColor clearColor];
-    cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage.png"];//未选cell时的图片
+    cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage_item_1.png"];//未选cell时的图片
     //cell.imageView.highlightedImage=[UIImage imageNamed:@"Bund.bundle/images/mine.png"];//选中cell后的图片
     cell.textLabel.text=[[lt objectForKey:[[lt allKeys]objectAtIndex:indexPath.section]]objectAtIndex:indexPath.row];
     if (indexPath.section==0)
     {
-       cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage.png"];//未选cell时的图片
+       cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage_item_1.png"];//未选cell时的图片
     }
     if (indexPath.section==1)
     {
-        cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/mine.png"];//未选cell时的图片
+        cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage_item_2.png"];//未选cell时的图片
     }
-  
-    
+    if (indexPath.section==2) {
+        cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage_item_3.png"];
+    }
+    if (indexPath.section==3) {
+        cell.imageView.image=[UIImage imageNamed:@"Bund.bundle/images/homepage_item_4.png"];
+    }
     
     return cell;
 }
@@ -133,32 +137,8 @@
     }
     if (indexPath.section==1)
     {
-        //LoginViewController *loginViewContr=[[LoginViewController alloc] init];
-        //RegisterViewController *registerContr=[[RegisterViewController alloc]init];
-       // ForgetViewController *forgetContr=[[ForgetViewController alloc]init];
-        //PasswordViewController *passContr=[[PasswordViewController alloc]init];
-        //MaterialViewController *materContr=[[MaterialViewController alloc]init ];
-        //ComplainViewController *complainContr=[[ComplainViewController alloc]init];
-        //AddAddressViewController *addAddressContr=[[AddAddressViewController alloc]init];
-        //FeedbackViewController *feedbackContr=[[FeedbackViewController alloc]init];
-        //ModifyAddressViewController *modifyAddressContr=[[ModifyAddressViewController alloc]init];
-        //SentViewController *sentContr=[[SentViewController alloc]init];
-        //SiteSearchViewController *siteContr=[[SiteSearchViewController alloc]init];
-        
-       // FindBillViewController *findBillContr=[[FindBillViewController alloc]init];
-       // ExpressAgingViewController *expressContr=[[ExpressAgingViewController alloc]init];
-        
-       // MyOrderViewController *myorderContr=[[MyOrderViewController alloc]init];
-        //AddressViewController *addressContr=[[AddressViewController alloc]init];
-       // NearbyLocationViewController *nearbyContr=[[NearbyLocationViewController alloc]init];
-        //ChooseAreaViewController *areaContr=[[ChooseAreaViewController alloc]init];
-        //BillDetailViewController *billdetailContr=[[BillDetailViewController alloc]init];
-        //MyViewController *myContr=[[MyViewController alloc]init];
-        //AboutViewController *aboutContr=[[AboutViewController alloc]init];
-        //ContrabandViewController *contrabandContr=[[ContrabandViewController alloc]init];
-        OrderDetailViewController *orderdetailContr=[[OrderDetailViewController alloc]init];
-        
-        [self presentViewController:orderdetailContr animated:YES  completion:nil];
+        SentViewController *sentContr=[[SentViewController alloc]init];
+       [self presentViewController:sentContr animated:YES  completion:nil];
     }
     NSUInteger row = [indexPath row];
     if (row == 0)
