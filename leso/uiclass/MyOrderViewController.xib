@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -14,17 +14,137 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIQ-oT-jB2">
-                    <rect key="frame" x="79" y="35" width="46" height="30"/>
-                    <state key="normal" title="Button">
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcD-28-7Js" userLabel="开始时间">
+                    <rect key="frame" x="53" y="49" width="475" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-aF-OMk" userLabel="开始时间背景">
+                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="开始时间：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jis-NZ-UbQ" userLabel="开始时间标签">
+                            <rect key="frame" x="2" y="5" width="80" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bWl-bk-5D6" userLabel="开始时间输入框">
+                            <rect key="frame" x="76" y="2" width="169" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-DK-MhO" userLabel="选择">
+                            <rect key="frame" x="448" y="0.0" width="15" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="3VD-WG-HlB"/>
+                                <constraint firstAttribute="width" constant="15" id="QII-xn-cOT"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Bund.bundle/images/choose.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstItem="bWl-bk-5D6" firstAttribute="leading" secondItem="jis-NZ-UbQ" secondAttribute="trailing" id="1Sl-5b-H5z"/>
+                        <constraint firstItem="UhT-aF-OMk" firstAttribute="leading" secondItem="WcD-28-7Js" secondAttribute="leading" id="3K5-8a-ZyP"/>
+                        <constraint firstItem="Bn0-DK-MhO" firstAttribute="leading" secondItem="bWl-bk-5D6" secondAttribute="trailing" constant="5" id="3KO-la-eYr"/>
+                        <constraint firstAttribute="trailing" secondItem="UhT-aF-OMk" secondAttribute="trailing" id="Wa2-ZX-WA8"/>
+                        <constraint firstAttribute="trailing" secondItem="Bn0-DK-MhO" secondAttribute="trailing" constant="5" id="d1E-9S-orM"/>
+                        <constraint firstAttribute="height" constant="33" id="ghN-0Q-DZ3"/>
+                        <constraint firstItem="UhT-aF-OMk" firstAttribute="top" secondItem="WcD-28-7Js" secondAttribute="top" constant="32" id="wFk-8I-9dF"/>
+                        <constraint firstItem="jis-NZ-UbQ" firstAttribute="leading" secondItem="WcD-28-7Js" secondAttribute="leading" id="zr5-hm-ogt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-z0-KBg" userLabel="结束时间">
+                    <rect key="frame" x="53" y="125" width="475" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="jcd-QB-RrB" userLabel="结束时间背景">
+                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="结束时间：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLM-Uz-FHE" userLabel="结束时间标签">
+                            <rect key="frame" x="2" y="5" width="82" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJF-dK-TBd" userLabel="选择">
+                            <rect key="frame" x="448" y="0.0" width="15" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="bXg-Qw-8xW"/>
+                                <constraint firstAttribute="height" constant="25" id="ttM-RV-e3L"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Bund.bundle/images/choose.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kg5-6y-f0D" userLabel="结束时间输入框">
+                            <rect key="frame" x="76" y="2" width="169" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstItem="jcd-QB-RrB" firstAttribute="top" secondItem="dEh-z0-KBg" secondAttribute="top" constant="32" id="35Q-jW-Vtu"/>
+                        <constraint firstAttribute="trailing" secondItem="jcd-QB-RrB" secondAttribute="trailing" id="810-wu-fOQ"/>
+                        <constraint firstAttribute="height" constant="33" id="P6J-JS-uYf"/>
+                        <constraint firstAttribute="trailing" secondItem="mJF-dK-TBd" secondAttribute="trailing" constant="5" id="XQC-Bw-sRD"/>
+                        <constraint firstItem="jcd-QB-RrB" firstAttribute="leading" secondItem="dEh-z0-KBg" secondAttribute="leading" id="a3Y-Kx-Mfg"/>
+                        <constraint firstItem="mJF-dK-TBd" firstAttribute="leading" secondItem="kg5-6y-f0D" secondAttribute="trailing" constant="5" id="hWT-8G-b6j"/>
+                        <constraint firstItem="gLM-Uz-FHE" firstAttribute="leading" secondItem="dEh-z0-KBg" secondAttribute="leading" id="jgg-jl-uIq"/>
+                        <constraint firstItem="kg5-6y-f0D" firstAttribute="leading" secondItem="gLM-Uz-FHE" secondAttribute="trailing" id="knk-HR-xEc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIQ-oT-jB2">
+                    <rect key="frame" x="53" y="215" width="475" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="GDk-y8-CPB"/>
+                    </constraints>
+                    <state key="normal" title="查询" backgroundImage="Bund.bundle/images/login_bt.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="onclick:" destination="-1" eventType="touchUpInside" id="nLQ-oP-C5r"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vr4-QF-Fo9">
+                    <rect key="frame" x="0.0" y="259" width="600" height="296"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vr4-QF-Fo9" firstAttribute="top" secondItem="wIQ-oT-jB2" secondAttribute="bottom" constant="10" id="1Z6-2H-i3i"/>
+                <constraint firstAttribute="trailing" secondItem="WcD-28-7Js" secondAttribute="trailing" constant="30" id="2d6-Ym-c7f"/>
+                <constraint firstAttribute="trailing" secondItem="vr4-QF-Fo9" secondAttribute="trailing" id="996-pR-Nrv"/>
+                <constraint firstItem="dEh-z0-KBg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="AIm-rV-RQ5"/>
+                <constraint firstItem="WcD-28-7Js" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="P5c-fN-dCk"/>
+                <constraint firstAttribute="trailing" secondItem="wIQ-oT-jB2" secondAttribute="trailing" constant="30" id="RPU-R5-ffW"/>
+                <constraint firstItem="wIQ-oT-jB2" firstAttribute="top" secondItem="dEh-z0-KBg" secondAttribute="bottom" constant="30" id="Vbz-VE-fvV"/>
+                <constraint firstItem="vr4-QF-Fo9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z0O-R4-9iB"/>
+                <constraint firstItem="WcD-28-7Js" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="h1S-aN-jBG"/>
+                <constraint firstItem="dEh-z0-KBg" firstAttribute="top" secondItem="WcD-28-7Js" secondAttribute="bottom" constant="20" id="hKv-Xy-JId"/>
+                <constraint firstItem="wIQ-oT-jB2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="mm9-XM-sTO"/>
+                <constraint firstAttribute="trailing" secondItem="dEh-z0-KBg" secondAttribute="trailing" constant="30" id="p95-AF-cot"/>
+                <constraint firstItem="dEh-z0-KBg" firstAttribute="top" secondItem="WcD-28-7Js" secondAttribute="bottom" constant="20" id="umh-zc-4ov"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Bund.bundle/images/choose.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_bt.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/textview_line.png" width="360" height="480"/>
+    </resources>
 </document>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailViewController">
@@ -13,7 +13,125 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MSK-az-zVb">
+                    <rect key="frame" x="0.0" y="152" width="600" height="296"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xf8-LE-Av3" userLabel="状态">
+                    <rect key="frame" x="30" y="47" width="507" height="77"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Duw-LB-VUf" userLabel="已接单模块">
+                            <rect key="frame" x="106" y="6" width="50" height="65"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/order_receive_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="VKV-mL-nQJ" userLabel="已接单图片">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="7Jg-Bk-BMy"/>
+                                        <constraint firstAttribute="height" constant="45" id="vUE-3q-dWn"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="已接单" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hl-T4-puC">
+                                    <rect key="frame" x="3" y="46" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="VKV-mL-nQJ" firstAttribute="leading" secondItem="Duw-LB-VUf" secondAttribute="leading" id="27n-lW-dwe"/>
+                                <constraint firstItem="1hl-T4-puC" firstAttribute="top" secondItem="VKV-mL-nQJ" secondAttribute="bottom" constant="3" id="2no-cU-Awo"/>
+                                <constraint firstItem="1hl-T4-puC" firstAttribute="leading" secondItem="Duw-LB-VUf" secondAttribute="leading" id="AaJ-kC-tRE"/>
+                                <constraint firstAttribute="trailing" secondItem="1hl-T4-puC" secondAttribute="trailing" id="UP1-sb-74p"/>
+                                <constraint firstAttribute="trailing" secondItem="VKV-mL-nQJ" secondAttribute="trailing" id="tCv-cc-tE3"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="oyo-9e-CP8" userLabel="已接单条">
+                            <rect key="frame" x="153" y="30" width="55" height="1"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xq6-ij-sbS" userLabel="配送中模块">
+                            <rect key="frame" x="204" y="8" width="55" height="61"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/order_delivery_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9lW-aB-XC1" userLabel="配送中图片">
+                                    <rect key="frame" x="5" y="-3" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="Vgg-Et-hP8"/>
+                                        <constraint firstAttribute="height" constant="45" id="zcE-YR-Mvw"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="配送中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1C-4f-Br9">
+                                    <rect key="frame" x="8" y="41" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="O1C-4f-Br9" firstAttribute="leading" secondItem="Xq6-ij-sbS" secondAttribute="leading" id="8Bo-cQ-e94"/>
+                                <constraint firstItem="9lW-aB-XC1" firstAttribute="leading" secondItem="Xq6-ij-sbS" secondAttribute="leading" id="D3X-s9-3Kf"/>
+                                <constraint firstAttribute="trailing" secondItem="9lW-aB-XC1" secondAttribute="trailing" id="Gai-ZL-S5U"/>
+                                <constraint firstItem="O1C-4f-Br9" firstAttribute="top" secondItem="9lW-aB-XC1" secondAttribute="bottom" constant="3" id="HeF-Kn-vjc"/>
+                                <constraint firstAttribute="trailing" secondItem="O1C-4f-Br9" secondAttribute="trailing" id="ktp-y5-QUh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nLR-jW-aKq" userLabel="已签收模块">
+                            <rect key="frame" x="337" y="8" width="50" height="63"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/order_sign_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="EdY-oo-RU5" userLabel="已签收图片">
+                                    <rect key="frame" x="0.0" y="-3" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="2mH-3R-jye"/>
+                                        <constraint firstAttribute="height" constant="45" id="cvo-jM-DC1"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="已签收" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anf-3b-L4S">
+                                    <rect key="frame" x="3" y="42" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="anf-3b-L4S" firstAttribute="top" secondItem="EdY-oo-RU5" secondAttribute="bottom" constant="3" id="5Wx-gg-Xe9"/>
+                                <constraint firstItem="EdY-oo-RU5" firstAttribute="leading" secondItem="nLR-jW-aKq" secondAttribute="leading" id="5qr-38-Tea"/>
+                                <constraint firstItem="anf-3b-L4S" firstAttribute="leading" secondItem="nLR-jW-aKq" secondAttribute="leading" id="XMI-6H-jie"/>
+                                <constraint firstAttribute="trailing" secondItem="anf-3b-L4S" secondAttribute="trailing" id="Zw4-oW-Ffn"/>
+                                <constraint firstAttribute="trailing" secondItem="EdY-oo-RU5" secondAttribute="trailing" id="jG4-zW-K1A"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="02F-c9-IwK" userLabel="配送中条">
+                            <rect key="frame" x="256" y="30" width="80" height="1"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nLR-jW-aKq" firstAttribute="leading" secondItem="02F-c9-IwK" secondAttribute="trailing" id="3qY-F1-YZ6"/>
+                        <constraint firstItem="02F-c9-IwK" firstAttribute="leading" secondItem="Xq6-ij-sbS" secondAttribute="trailing" id="LPk-7i-jdM"/>
+                        <constraint firstItem="oyo-9e-CP8" firstAttribute="leading" secondItem="Duw-LB-VUf" secondAttribute="trailing" id="MAd-9T-4eB"/>
+                        <constraint firstItem="Xq6-ij-sbS" firstAttribute="leading" secondItem="oyo-9e-CP8" secondAttribute="trailing" id="Rs1-s9-FJO"/>
+                        <constraint firstAttribute="trailing" secondItem="nLR-jW-aKq" secondAttribute="trailing" id="bRT-2B-bH9"/>
+                        <constraint firstItem="Duw-LB-VUf" firstAttribute="leading" secondItem="xf8-LE-Av3" secondAttribute="leading" id="jyY-M1-1kx"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MSK-az-zVb" firstAttribute="top" secondItem="xf8-LE-Av3" secondAttribute="bottom" constant="10" id="8xr-TM-yBY"/>
+                <constraint firstAttribute="trailing" secondItem="xf8-LE-Av3" secondAttribute="trailing" constant="30" id="aNa-86-rgi"/>
+                <constraint firstItem="xf8-LE-Av3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="cHy-Ta-xNG"/>
+                <constraint firstAttribute="trailing" secondItem="MSK-az-zVb" secondAttribute="trailing" id="fPf-de-XtS"/>
+                <constraint firstItem="MSK-az-zVb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rgX-gg-0Cw"/>
+            </constraints>
+            <point key="canvasLocation" x="532" y="322"/>
         </view>
     </objects>
+    <resources>
+        <image name="Bund.bundle/images/order_delivery_1.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/order_receive_1.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/order_sign_1.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/textview_line.png" width="360" height="480"/>
+    </resources>
 </document>

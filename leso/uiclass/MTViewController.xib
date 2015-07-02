@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -14,28 +14,93 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KkA-9r-qpU">
-                    <rect key="frame" x="0.0" y="150" width="575" height="300"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KkA-9r-qpU">
+                    <rect key="frame" x="0.0" y="207" width="575" height="300"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="eAY-Po-gLS"/>
                         <outlet property="delegate" destination="-1" id="bcy-CF-l9w"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bund.bundle/images/gga.png" translatesAutoresizingMaskIntoConstraints="NO" id="JwW-BT-9Zp">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bund.bundle/images/gga.png" translatesAutoresizingMaskIntoConstraints="NO" id="JwW-BT-9Zp">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="5Mm-Lh-vQy"/>
+                    </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Toy-fS-MNU" userLabel="运单号">
+                    <rect key="frame" x="22" y="139" width="443" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login.png" translatesAutoresizingMaskIntoConstraints="NO" id="qFv-ee-DQR" userLabel="运单号背景">
+                            <rect key="frame" x="0.0" y="-1" width="443" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="5u1-TN-ES0"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BQx-dO-eYB" userLabel="运单号输入框">
+                            <rect key="frame" x="46" y="7" width="389" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-IJ-tb1" userLabel="扫描">
+                            <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="5Ce-UV-WAl"/>
+                                <constraint firstAttribute="width" constant="43" id="gkL-hB-re6"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Bund.bundle/images/scan.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qFv-ee-DQR" secondAttribute="trailing" id="0i7-8f-wl0"/>
+                        <constraint firstAttribute="trailing" secondItem="BQx-dO-eYB" secondAttribute="trailing" constant="5" id="4Ui-ff-9P0"/>
+                        <constraint firstAttribute="height" constant="45" id="4h5-7l-rOS"/>
+                        <constraint firstItem="eBZ-IJ-tb1" firstAttribute="leading" secondItem="Toy-fS-MNU" secondAttribute="leading" id="M3D-fr-f4b"/>
+                        <constraint firstItem="qFv-ee-DQR" firstAttribute="leading" secondItem="Toy-fS-MNU" secondAttribute="leading" id="S6P-x9-UmV"/>
+                        <constraint firstItem="BQx-dO-eYB" firstAttribute="leading" secondItem="eBZ-IJ-tb1" secondAttribute="trailing" constant="5" id="xj7-dX-4vl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7V-oS-kXR">
+                    <rect key="frame" x="474" y="139" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="JON-oW-S1H"/>
+                        <constraint firstAttribute="height" constant="44" id="u9L-I3-fCj"/>
+                    </constraints>
+                    <state key="normal" title="查询" backgroundImage="Bund.bundle/images/login_bt.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882357" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="H7V-oS-kXR" firstAttribute="top" secondItem="JwW-BT-9Zp" secondAttribute="bottom" constant="20" id="4hE-S4-eYJ"/>
                 <constraint firstItem="JwW-BT-9Zp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6RQ-WF-43O"/>
                 <constraint firstAttribute="trailing" secondItem="JwW-BT-9Zp" secondAttribute="trailing" id="7fz-IA-qxo"/>
+                <constraint firstItem="Toy-fS-MNU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="CIZ-Mr-EWe"/>
+                <constraint firstAttribute="trailing" secondItem="H7V-oS-kXR" secondAttribute="trailing" constant="30" id="Er6-AN-jjW"/>
                 <constraint firstItem="JwW-BT-9Zp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H9O-4b-qfi"/>
-                <constraint firstAttribute="bottom" secondItem="JwW-BT-9Zp" secondAttribute="bottom" constant="500" id="nxS-gE-Cd5"/>
+                <constraint firstItem="KkA-9r-qpU" firstAttribute="top" secondItem="H7V-oS-kXR" secondAttribute="bottom" constant="20" id="s3m-2h-B4Z"/>
+                <constraint firstItem="Toy-fS-MNU" firstAttribute="top" secondItem="JwW-BT-9Zp" secondAttribute="bottom" constant="20" id="sT3-5s-MfD"/>
+                <constraint firstItem="H7V-oS-kXR" firstAttribute="leading" secondItem="Toy-fS-MNU" secondAttribute="trailing" constant="5" id="wc7-5u-stZ"/>
+                <constraint firstItem="KkA-9r-qpU" firstAttribute="top" secondItem="Toy-fS-MNU" secondAttribute="bottom" constant="20" id="yQP-om-YO7"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="Bund.bundle/images/gga.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_bt.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/scan.png" width="360" height="480"/>
     </resources>
 </document>

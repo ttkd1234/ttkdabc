@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SiteSearchViewController">
@@ -13,7 +13,91 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="t9f-wR-03R">
+                    <rect key="frame" x="0.0" y="190" width="600" height="296"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-FI-2jM" userLabel="查询">
+                    <rect key="frame" x="0.0" y="-6" width="600" height="188"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-93-LdS" userLabel="地区选择">
+                            <rect key="frame" x="44" y="77" width="443" height="45"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gi4-k5-WeX" userLabel="地区选择背景">
+                                    <rect key="frame" x="0.0" y="0.0" width="443" height="45"/>
+                                    <color key="backgroundColor" red="0.08235294118" green="0.61960784310000006" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="rgX-cs-hlm"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7v-dG-aHs" userLabel="地区选择按钮">
+                                    <rect key="frame" x="408" y="7" width="23" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="TWm-iJ-mf3"/>
+                                        <constraint firstAttribute="width" constant="23" id="jiN-io-Eq3"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Bund.bundle/images/site_search.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eyX-Z4-3CC" userLabel="地区选择输入框">
+                                    <rect key="frame" x="8" y="6" width="378" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Gi4-k5-WeX" secondAttribute="trailing" id="6pa-Yd-5ZW"/>
+                                <constraint firstItem="eyX-Z4-3CC" firstAttribute="leading" secondItem="M4p-93-LdS" secondAttribute="leading" constant="10" id="8Gp-Mr-UHr"/>
+                                <constraint firstItem="Gi4-k5-WeX" firstAttribute="leading" secondItem="M4p-93-LdS" secondAttribute="leading" id="bdf-2a-D0J"/>
+                                <constraint firstItem="k7v-dG-aHs" firstAttribute="leading" secondItem="eyX-Z4-3CC" secondAttribute="trailing" constant="10" id="cUS-BR-AUg"/>
+                                <constraint firstAttribute="trailing" secondItem="k7v-dG-aHs" secondAttribute="trailing" constant="5" id="wNE-QM-x3I"/>
+                                <constraint firstAttribute="height" constant="45" id="xnx-cg-DKS"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNn-Bl-fTM">
+                            <rect key="frame" x="495" y="77" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="NiK-vH-oRN"/>
+                                <constraint firstAttribute="width" constant="60" id="Wq7-Po-7YJ"/>
+                            </constraints>
+                            <state key="normal" title="查询" backgroundImage="Bund.bundle/images/login_bt.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.08235294118" green="0.61960784310000006" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="YNn-Bl-fTM" firstAttribute="leading" secondItem="M4p-93-LdS" secondAttribute="trailing" constant="5" id="0Jc-tN-OUr"/>
+                        <constraint firstItem="YNn-Bl-fTM" firstAttribute="top" secondItem="iqv-FI-2jM" secondAttribute="top" constant="60" id="6wy-4h-HZO"/>
+                        <constraint firstItem="M4p-93-LdS" firstAttribute="top" secondItem="iqv-FI-2jM" secondAttribute="top" constant="60" id="XZn-it-dQj"/>
+                        <constraint firstItem="M4p-93-LdS" firstAttribute="leading" secondItem="iqv-FI-2jM" secondAttribute="leading" constant="30" id="mTj-Jv-tI2"/>
+                        <constraint firstAttribute="height" constant="130" id="pPn-tU-PMA"/>
+                        <constraint firstAttribute="trailing" secondItem="YNn-Bl-fTM" secondAttribute="trailing" constant="30" id="zzM-Ji-ZtA"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iqv-FI-2jM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ib9-qT-nCE"/>
+                <constraint firstItem="t9f-wR-03R" firstAttribute="top" secondItem="iqv-FI-2jM" secondAttribute="bottom" id="JuZ-Gt-Usw"/>
+                <constraint firstItem="iqv-FI-2jM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ogb-TD-vZt"/>
+                <constraint firstAttribute="trailing" secondItem="iqv-FI-2jM" secondAttribute="trailing" id="rOE-Pm-lZD"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Bund.bundle/images/login.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_bt.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/site_search.png" width="360" height="480"/>
+    </resources>
 </document>

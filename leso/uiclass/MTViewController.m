@@ -142,8 +142,23 @@
         //AddAddressViewController *addAddressContr=[[AddAddressViewController alloc]init];
         //FeedbackViewController *feedbackContr=[[FeedbackViewController alloc]init];
         //ModifyAddressViewController *modifyAddressContr=[[ModifyAddressViewController alloc]init];
-        SentViewController *sentContr=[[SentViewController alloc]init];
-        [self presentViewController:sentContr animated:YES  completion:nil];
+        //SentViewController *sentContr=[[SentViewController alloc]init];
+        //SiteSearchViewController *siteContr=[[SiteSearchViewController alloc]init];
+        
+       // FindBillViewController *findBillContr=[[FindBillViewController alloc]init];
+       // ExpressAgingViewController *expressContr=[[ExpressAgingViewController alloc]init];
+        
+       // MyOrderViewController *myorderContr=[[MyOrderViewController alloc]init];
+        //AddressViewController *addressContr=[[AddressViewController alloc]init];
+       // NearbyLocationViewController *nearbyContr=[[NearbyLocationViewController alloc]init];
+        //ChooseAreaViewController *areaContr=[[ChooseAreaViewController alloc]init];
+        //BillDetailViewController *billdetailContr=[[BillDetailViewController alloc]init];
+        //MyViewController *myContr=[[MyViewController alloc]init];
+        //AboutViewController *aboutContr=[[AboutViewController alloc]init];
+        //ContrabandViewController *contrabandContr=[[ContrabandViewController alloc]init];
+        OrderDetailViewController *orderdetailContr=[[OrderDetailViewController alloc]init];
+        
+        [self presentViewController:orderdetailContr animated:YES  completion:nil];
     }
     NSUInteger row = [indexPath row];
     if (row == 0)

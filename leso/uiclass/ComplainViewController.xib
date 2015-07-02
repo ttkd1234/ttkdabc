@@ -244,9 +244,17 @@
                                 <constraint firstAttribute="height" constant="66" id="U5A-GC-AmD"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="请输入您想投诉的内容" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0ME-c6-Pap" userLabel="投诉框输入框">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0ME-c6-Pap" userLabel="投诉框输入框">
                             <rect key="frame" x="10" y="11" width="458" height="53"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <attributedString key="attributedText">
+                                <fragment content="    请输入您想投诉的内容">
+                                    <attributes>
+                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>

@@ -14,190 +14,335 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-7g-t0l">
-                    <rect key="frame" x="158" y="496" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onclick:" destination="-1" eventType="touchUpInside" id="P8g-8o-FPK"/>
-                    </connections>
-                </button>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgV-82-1SO" userLabel="姓名">
-                    <rect key="frame" x="54" y="64" width="475" height="33"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57A-sX-FvQ" userLabel="按钮">
+                    <rect key="frame" x="2" y="18" width="598" height="38"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-W7-2z5" userLabel="姓名背景">
-                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="VuE-o3-8ud" userLabel="网上寄件背景">
+                            <rect key="frame" x="2" y="35" width="285" height="1"/>
                             <accessibility key="accessibilityConfiguration">
                                 <bool key="isElement" value="YES"/>
                             </accessibility>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="姓名：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Z-E1-Ega" userLabel="姓名标签">
-                            <rect key="frame" x="4" y="5" width="42" height="26"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vMn-6a-pQS" userLabel="姓名输入框">
-                            <rect key="frame" x="43" y="0.0" width="169" height="31"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <bool key="isElement" value="YES"/>
-                    </accessibility>
-                    <constraints>
-                        <constraint firstItem="vMn-6a-pQS" firstAttribute="leading" secondItem="B5Z-E1-Ega" secondAttribute="trailing" id="8LC-kF-bRu"/>
-                        <constraint firstAttribute="trailing" secondItem="vMn-6a-pQS" secondAttribute="trailing" constant="10" id="Vf0-kG-z1j"/>
-                        <constraint firstAttribute="height" constant="33" id="bJo-S4-PE0"/>
-                        <constraint firstAttribute="trailing" secondItem="SYU-W7-2z5" secondAttribute="trailing" id="gzH-yq-Y0n"/>
-                        <constraint firstItem="SYU-W7-2z5" firstAttribute="leading" secondItem="UgV-82-1SO" secondAttribute="leading" id="ipQ-7H-ndi"/>
-                        <constraint firstItem="B5Z-E1-Ega" firstAttribute="leading" secondItem="UgV-82-1SO" secondAttribute="leading" id="oMr-tG-065"/>
-                        <constraint firstItem="SYU-W7-2z5" firstAttribute="top" secondItem="UgV-82-1SO" secondAttribute="top" constant="32" id="udT-ne-g1A"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sz3-ZK-nF8" userLabel="手机号">
-                    <rect key="frame" x="54" y="126" width="475" height="33"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="x39-AS-8sf" userLabel="手机号背景">
-                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGW-Km-CG6" userLabel="网上寄件按钮">
+                            <rect key="frame" x="134" y="-7" width="66" height="36"/>
+                            <state key="normal" title="网上寄件">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="zGQ-FM-0u8" userLabel="电话寄件背景">
+                            <rect key="frame" x="289" y="35" width="304" height="1"/>
                             <accessibility key="accessibilityConfiguration">
                                 <bool key="isElement" value="YES"/>
                             </accessibility>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="手机号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu1-uE-Jou" userLabel="手机号标签">
-                            <rect key="frame" x="1" y="5" width="57" height="26"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LoV-cg-Ujt" userLabel="手机号输入框">
-                            <rect key="frame" x="55" y="0.0" width="169" height="31"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <bool key="isElement" value="YES"/>
-                    </accessibility>
-                    <constraints>
-                        <constraint firstItem="x39-AS-8sf" firstAttribute="top" secondItem="sz3-ZK-nF8" secondAttribute="top" constant="32" id="6ox-xb-XmB"/>
-                        <constraint firstItem="LoV-cg-Ujt" firstAttribute="leading" secondItem="gu1-uE-Jou" secondAttribute="trailing" id="9YW-0A-pE7"/>
-                        <constraint firstItem="gu1-uE-Jou" firstAttribute="leading" secondItem="sz3-ZK-nF8" secondAttribute="leading" id="ESo-37-7CM"/>
-                        <constraint firstAttribute="trailing" secondItem="LoV-cg-Ujt" secondAttribute="trailing" constant="10" id="LVa-Eg-5to"/>
-                        <constraint firstAttribute="trailing" secondItem="x39-AS-8sf" secondAttribute="trailing" id="OC6-pD-LNH"/>
-                        <constraint firstAttribute="height" constant="33" id="xnH-Zu-H0Y"/>
-                        <constraint firstItem="x39-AS-8sf" firstAttribute="leading" secondItem="sz3-ZK-nF8" secondAttribute="leading" id="zUP-Yn-6Gp"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKN-Be-NLP" userLabel="所在地区">
-                    <rect key="frame" x="53" y="193" width="475" height="33"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kuf-Gd-gtS" userLabel="所在地区背景">
-                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
-                            <accessibility key="accessibilityConfiguration">
-                                <bool key="isElement" value="YES"/>
-                            </accessibility>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="所在地区：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3U-W8-nYs" userLabel="所在地区标签">
-                            <rect key="frame" x="3" y="5" width="74" height="28"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RMs-R0-Qmp" userLabel="所在地区输入框">
-                            <rect key="frame" x="74" y="0.0" width="169" height="31"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79E-Za-C3i" userLabel="选择地址">
-                            <rect key="frame" x="435" y="0.0" width="30" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="30" id="3db-Hg-2iK"/>
-                                <constraint firstAttribute="width" constant="20" id="Pya-T7-Lwq"/>
-                            </constraints>
-                            <state key="normal" backgroundImage="Bund.bundle/images/address.png">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRu-GN-Dqu" userLabel="电话寄件按钮">
+                            <rect key="frame" x="395" y="-6" width="71" height="37"/>
+                            <state key="normal" title="电话寄件">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <bool key="isElement" value="YES"/>
-                    </accessibility>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="79E-Za-C3i" secondAttribute="trailing" constant="10" id="KzU-sH-rWn"/>
-                        <constraint firstItem="Kuf-Gd-gtS" firstAttribute="top" secondItem="yKN-Be-NLP" secondAttribute="top" constant="32" id="NWV-kE-5zC"/>
-                        <constraint firstItem="79E-Za-C3i" firstAttribute="leading" secondItem="RMs-R0-Qmp" secondAttribute="trailing" constant="5" id="c3K-bK-6WB"/>
-                        <constraint firstItem="RMs-R0-Qmp" firstAttribute="leading" secondItem="w3U-W8-nYs" secondAttribute="trailing" id="htk-fJ-71G"/>
-                        <constraint firstAttribute="height" constant="33" id="mch-iz-QG7"/>
-                        <constraint firstAttribute="trailing" secondItem="Kuf-Gd-gtS" secondAttribute="trailing" id="sDS-Ab-fab"/>
-                        <constraint firstItem="w3U-W8-nYs" firstAttribute="leading" secondItem="yKN-Be-NLP" secondAttribute="leading" id="zPr-fD-U4Z"/>
-                        <constraint firstItem="Kuf-Gd-gtS" firstAttribute="leading" secondItem="yKN-Be-NLP" secondAttribute="leading" id="zYD-xh-19b"/>
+                        <constraint firstItem="zGQ-FM-0u8" firstAttribute="leading" secondItem="VuE-o3-8ud" secondAttribute="trailing" id="Axs-ux-sZa"/>
+                        <constraint firstItem="dGW-Km-CG6" firstAttribute="leading" secondItem="57A-sX-FvQ" secondAttribute="leading" constant="60" id="Fyi-yU-EIE"/>
+                        <constraint firstAttribute="trailing" secondItem="hRu-GN-Dqu" secondAttribute="trailing" constant="60" id="JrT-0f-s0c"/>
+                        <constraint firstItem="VuE-o3-8ud" firstAttribute="leading" secondItem="57A-sX-FvQ" secondAttribute="leading" id="KVo-8r-zr3"/>
+                        <constraint firstAttribute="trailing" secondItem="zGQ-FM-0u8" secondAttribute="trailing" id="L3D-of-R03"/>
+                        <constraint firstItem="zGQ-FM-0u8" firstAttribute="top" secondItem="57A-sX-FvQ" secondAttribute="top" constant="32" id="L6h-aF-e9G"/>
+                        <constraint firstAttribute="height" constant="33" id="dJJ-78-Q6Q"/>
+                        <constraint firstItem="VuE-o3-8ud" firstAttribute="top" secondItem="57A-sX-FvQ" secondAttribute="top" constant="32" id="oYf-Rw-V4J"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-TO-NGC" userLabel="详细地址">
-                    <rect key="frame" x="53" y="262" width="475" height="33"/>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJN-5N-g1o" userLabel="网上寄件界面">
+                    <rect key="frame" x="44" y="72" width="498" height="437"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="aRw-UA-olZ" userLabel="详细地址背景">
-                            <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgV-82-1SO" userLabel="姓名">
+                            <rect key="frame" x="15" y="18" width="475" height="33"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-W7-2z5" userLabel="姓名背景">
+                                    <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="姓名：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Z-E1-Ega" userLabel="姓名标签">
+                                    <rect key="frame" x="4" y="5" width="42" height="26"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vMn-6a-pQS" userLabel="姓名输入框">
+                                    <rect key="frame" x="43" y="0.0" width="169" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tic-VV-4Mf" userLabel="选择寄件地址">
+                                    <rect key="frame" x="437" y="2" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="0U6-6X-nof"/>
+                                        <constraint firstAttribute="height" constant="28" id="g4N-hc-M4f"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Bund.bundle/images/sent_name.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <accessibility key="accessibilityConfiguration">
                                 <bool key="isElement" value="YES"/>
                             </accessibility>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="详细地址：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-wk-jYR" userLabel="详细地址标签">
-                            <rect key="frame" x="2" y="5" width="72" height="26"/>
+                            <constraints>
+                                <constraint firstItem="tic-VV-4Mf" firstAttribute="leading" secondItem="vMn-6a-pQS" secondAttribute="trailing" constant="10" id="0iY-Gq-XLB"/>
+                                <constraint firstItem="vMn-6a-pQS" firstAttribute="leading" secondItem="B5Z-E1-Ega" secondAttribute="trailing" id="8LC-kF-bRu"/>
+                                <constraint firstAttribute="trailing" secondItem="tic-VV-4Mf" secondAttribute="trailing" constant="5" id="UWa-eR-olt"/>
+                                <constraint firstAttribute="height" constant="33" id="bJo-S4-PE0"/>
+                                <constraint firstAttribute="trailing" secondItem="SYU-W7-2z5" secondAttribute="trailing" id="gzH-yq-Y0n"/>
+                                <constraint firstItem="SYU-W7-2z5" firstAttribute="leading" secondItem="UgV-82-1SO" secondAttribute="leading" id="ipQ-7H-ndi"/>
+                                <constraint firstItem="B5Z-E1-Ega" firstAttribute="leading" secondItem="UgV-82-1SO" secondAttribute="leading" id="oMr-tG-065"/>
+                                <constraint firstItem="SYU-W7-2z5" firstAttribute="top" secondItem="UgV-82-1SO" secondAttribute="top" constant="32" id="udT-ne-g1A"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Np-wW-nqy" userLabel="手机">
+                            <rect key="frame" x="15" y="74" width="475" height="33"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Kw-Nc-WhL" userLabel="手机背景">
+                                    <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="手机：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pQ-bv-rul" userLabel="手机标签">
+                                    <rect key="frame" x="1" y="5" width="42" height="26"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bFL-Gj-9vY" userLabel="手机输入框">
+                                    <rect key="frame" x="39" y="0.0" width="169" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstItem="4pQ-bv-rul" firstAttribute="leading" secondItem="7Np-wW-nqy" secondAttribute="leading" id="1TS-gZ-xQT"/>
+                                <constraint firstAttribute="height" constant="33" id="Q1A-56-lKS"/>
+                                <constraint firstItem="8Kw-Nc-WhL" firstAttribute="top" secondItem="7Np-wW-nqy" secondAttribute="top" constant="32" id="YIM-Hi-IFT"/>
+                                <constraint firstAttribute="trailing" secondItem="8Kw-Nc-WhL" secondAttribute="trailing" id="jEj-h6-MFd"/>
+                                <constraint firstAttribute="trailing" secondItem="bFL-Gj-9vY" secondAttribute="trailing" constant="10" id="odc-CQ-v8C"/>
+                                <constraint firstItem="bFL-Gj-9vY" firstAttribute="leading" secondItem="4pQ-bv-rul" secondAttribute="trailing" id="uQv-qJ-u72"/>
+                                <constraint firstItem="8Kw-Nc-WhL" firstAttribute="leading" secondItem="7Np-wW-nqy" secondAttribute="leading" id="vrG-9l-2g8"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aP0-vP-a5t" userLabel="取件地址">
+                            <rect key="frame" x="15" y="137" width="475" height="33"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="w47-0Q-lY3" userLabel="取件地址背景">
+                                    <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="取件地址：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtR-2x-FXc" userLabel="取件地址标签">
+                                    <rect key="frame" x="3" y="5" width="74" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="USj-D2-0wp" userLabel="取件地址输入框">
+                                    <rect key="frame" x="73" y="0.0" width="169" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G01-tR-hRV" userLabel="选择地址">
+                                    <rect key="frame" x="435" y="0.0" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Eth-eg-N3l"/>
+                                        <constraint firstAttribute="height" constant="30" id="pWC-Dd-D8l"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Bund.bundle/images/address.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="w47-0Q-lY3" secondAttribute="trailing" id="0ll-nC-UpD"/>
+                                <constraint firstAttribute="trailing" secondItem="G01-tR-hRV" secondAttribute="trailing" constant="10" id="6Ud-xZ-k3K"/>
+                                <constraint firstItem="wtR-2x-FXc" firstAttribute="leading" secondItem="aP0-vP-a5t" secondAttribute="leading" id="AzN-K5-oOt"/>
+                                <constraint firstItem="w47-0Q-lY3" firstAttribute="top" secondItem="aP0-vP-a5t" secondAttribute="top" constant="32" id="Ckj-Ro-C5q"/>
+                                <constraint firstItem="G01-tR-hRV" firstAttribute="leading" secondItem="USj-D2-0wp" secondAttribute="trailing" constant="5" id="QwM-kc-0Du"/>
+                                <constraint firstItem="USj-D2-0wp" firstAttribute="leading" secondItem="wtR-2x-FXc" secondAttribute="trailing" id="aKu-nc-9o8"/>
+                                <constraint firstItem="w47-0Q-lY3" firstAttribute="leading" secondItem="aP0-vP-a5t" secondAttribute="leading" id="qhM-DG-oUE"/>
+                                <constraint firstAttribute="height" constant="33" id="wum-DT-yC3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-TO-NGC" userLabel="详细地址">
+                            <rect key="frame" x="15" y="193" width="475" height="33"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/textview_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="aRw-UA-olZ" userLabel="详细地址背景">
+                                    <rect key="frame" x="0.0" y="32" width="475" height="1"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-In-PaG" userLabel="详细地址输入框">
+                                    <rect key="frame" x="6" y="0.0" width="169" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="9P9-In-PaG" secondAttribute="trailing" constant="10" id="Jct-9v-2eo"/>
+                                <constraint firstItem="9P9-In-PaG" firstAttribute="leading" secondItem="OnS-TO-NGC" secondAttribute="leading" constant="5" id="WwM-M4-z97"/>
+                                <constraint firstItem="aRw-UA-olZ" firstAttribute="top" secondItem="OnS-TO-NGC" secondAttribute="top" constant="32" id="bat-E4-J4U"/>
+                                <constraint firstAttribute="height" constant="33" id="i4C-l3-Zlp"/>
+                                <constraint firstAttribute="trailing" secondItem="aRw-UA-olZ" secondAttribute="trailing" id="iGx-aa-dOy"/>
+                                <constraint firstItem="aRw-UA-olZ" firstAttribute="leading" secondItem="OnS-TO-NGC" secondAttribute="leading" id="uqW-rC-7zn"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="备注：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOS-9d-r38" userLabel="备注：">
+                            <rect key="frame" x="15" y="243" width="46" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-In-PaG" userLabel="详细地址输入框">
-                            <rect key="frame" x="71" y="0.0" width="169" height="31"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjd-Ix-f6f" userLabel="备注框">
+                            <rect key="frame" x="14" y="269" width="476" height="77"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/login.png" translatesAutoresizingMaskIntoConstraints="NO" id="DOw-yh-cSc" userLabel="备注背景">
+                                    <rect key="frame" x="1" y="0.0" width="475" height="87"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="66" id="XKS-XW-zZQ"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jxJ-Gk-IxP" userLabel="备注输入框">
+                                    <rect key="frame" x="10" y="11" width="458" height="53"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstItem="DOw-yh-cSc" firstAttribute="leading" secondItem="bjd-Ix-f6f" secondAttribute="leading" id="FVQ-IR-Gl4"/>
+                                <constraint firstItem="jxJ-Gk-IxP" firstAttribute="top" secondItem="bjd-Ix-f6f" secondAttribute="top" constant="5" id="LpH-eX-j25"/>
+                                <constraint firstAttribute="trailing" secondItem="jxJ-Gk-IxP" secondAttribute="trailing" constant="10" id="Mfi-JD-Fbb"/>
+                                <constraint firstAttribute="bottom" secondItem="jxJ-Gk-IxP" secondAttribute="bottom" constant="5" id="Pk8-NQ-glR"/>
+                                <constraint firstAttribute="trailing" secondItem="DOw-yh-cSc" secondAttribute="trailing" id="VIc-bA-F1P"/>
+                                <constraint firstAttribute="height" constant="66" id="m4v-4N-Trm"/>
+                                <constraint firstItem="jxJ-Gk-IxP" firstAttribute="leading" secondItem="bjd-Ix-f6f" secondAttribute="leading" constant="10" id="sCt-Ei-WWT"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-7g-t0l" userLabel="提交订单">
+                            <rect key="frame" x="14" y="407" width="476" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="prd-fb-lpq"/>
+                            </constraints>
+                            <state key="normal" title="提交订单" backgroundImage="Bund.bundle/images/login_bt.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onclick:" destination="-1" eventType="touchUpInside" id="P8g-8o-FPK"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <bool key="isElement" value="YES"/>
-                    </accessibility>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="9P9-In-PaG" secondAttribute="trailing" constant="10" id="Jct-9v-2eo"/>
-                        <constraint firstItem="TnK-wk-jYR" firstAttribute="leading" secondItem="OnS-TO-NGC" secondAttribute="leading" id="LNV-Yq-swK"/>
-                        <constraint firstItem="aRw-UA-olZ" firstAttribute="top" secondItem="OnS-TO-NGC" secondAttribute="top" constant="32" id="bat-E4-J4U"/>
-                        <constraint firstAttribute="height" constant="33" id="i4C-l3-Zlp"/>
-                        <constraint firstAttribute="trailing" secondItem="aRw-UA-olZ" secondAttribute="trailing" id="iGx-aa-dOy"/>
-                        <constraint firstItem="aRw-UA-olZ" firstAttribute="leading" secondItem="OnS-TO-NGC" secondAttribute="leading" id="uqW-rC-7zn"/>
-                        <constraint firstItem="9P9-In-PaG" firstAttribute="leading" secondItem="TnK-wk-jYR" secondAttribute="trailing" id="xe2-wZ-e3x"/>
+                        <constraint firstAttribute="trailing" secondItem="OnS-TO-NGC" secondAttribute="trailing" id="17v-vL-lAu"/>
+                        <constraint firstItem="bjd-Ix-f6f" firstAttribute="top" secondItem="UOS-9d-r38" secondAttribute="bottom" constant="5" id="2gq-Mf-q90"/>
+                        <constraint firstItem="UOS-9d-r38" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="5ck-CO-f2e"/>
+                        <constraint firstAttribute="trailing" secondItem="UgV-82-1SO" secondAttribute="trailing" id="AQi-QS-kHN"/>
+                        <constraint firstAttribute="trailing" secondItem="bjd-Ix-f6f" secondAttribute="trailing" id="DgQ-el-j2m"/>
+                        <constraint firstItem="OnS-TO-NGC" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="Ej5-Gk-6xF"/>
+                        <constraint firstItem="UgV-82-1SO" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="HFv-Cq-yhh"/>
+                        <constraint firstItem="UOS-9d-r38" firstAttribute="top" secondItem="OnS-TO-NGC" secondAttribute="bottom" constant="15" id="ILs-YF-QiG"/>
+                        <constraint firstItem="OnS-TO-NGC" firstAttribute="top" secondItem="aP0-vP-a5t" secondAttribute="bottom" constant="20" id="KiQ-t3-Za2"/>
+                        <constraint firstItem="7Np-wW-nqy" firstAttribute="top" secondItem="UgV-82-1SO" secondAttribute="bottom" constant="20" id="P4F-lN-4Bh"/>
+                        <constraint firstItem="8Db-7g-t0l" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="PBh-Kb-QHQ"/>
+                        <constraint firstItem="bjd-Ix-f6f" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="S0W-jb-4fT"/>
+                        <constraint firstAttribute="trailing" secondItem="7Np-wW-nqy" secondAttribute="trailing" id="hXG-qR-I9Z"/>
+                        <constraint firstItem="aP0-vP-a5t" firstAttribute="top" secondItem="7Np-wW-nqy" secondAttribute="bottom" constant="20" id="hbS-rA-aMu"/>
+                        <constraint firstAttribute="trailing" secondItem="aP0-vP-a5t" secondAttribute="trailing" id="iC7-5P-tLd"/>
+                        <constraint firstItem="8Db-7g-t0l" firstAttribute="top" secondItem="bjd-Ix-f6f" secondAttribute="bottom" constant="30" id="qDr-al-Q6j"/>
+                        <constraint firstAttribute="trailing" secondItem="8Db-7g-t0l" secondAttribute="trailing" id="rFf-5w-E6r"/>
+                        <constraint firstItem="aP0-vP-a5t" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="rSE-vl-V76"/>
+                        <constraint firstItem="7Np-wW-nqy" firstAttribute="leading" secondItem="tJN-5N-g1o" secondAttribute="leading" id="soj-69-H6g"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRu-GN-Dqu">
-                    <rect key="frame" x="92" y="15" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tic-VV-4Mf">
-                    <rect key="frame" x="366" y="15" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
+                <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVq-xe-26G" userLabel="电话寄件界面">
+                    <rect key="frame" x="58" y="537" width="484" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMF-OL-XnI">
+                            <rect key="frame" x="12" y="17" width="20" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="32G-ek-iqa"/>
+                                <constraint firstAttribute="width" constant="20" id="khy-W3-K3A"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Bund.bundle/images/phone.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="全国服务热线：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndd-fb-7gp">
+                            <rect key="frame" x="48" y="21" width="121" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="4001-888-888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-oj-AgT">
+                            <rect key="frame" x="170" y="21" width="122" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iMF-OL-XnI" firstAttribute="leading" secondItem="eVq-xe-26G" secondAttribute="leading" constant="10" id="ZXv-uD-5Nj"/>
+                        <constraint firstAttribute="trailing" secondItem="EwN-oj-AgT" secondAttribute="trailing" constant="10" id="bS8-1C-rqj"/>
+                        <constraint firstItem="EwN-oj-AgT" firstAttribute="leading" secondItem="Ndd-fb-7gp" secondAttribute="trailing" constant="1" id="es5-Md-oEo"/>
+                        <constraint firstItem="Ndd-fb-7gp" firstAttribute="leading" secondItem="iMF-OL-XnI" secondAttribute="trailing" constant="8" id="fWj-Gq-c43"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="yKN-Be-NLP" firstAttribute="top" secondItem="sz3-ZK-nF8" secondAttribute="bottom" constant="20" id="Ok0-YF-DzL"/>
-                <constraint firstItem="OnS-TO-NGC" firstAttribute="top" secondItem="yKN-Be-NLP" secondAttribute="bottom" constant="20" id="c2r-qQ-Qsz"/>
-                <constraint firstItem="sz3-ZK-nF8" firstAttribute="top" secondItem="UgV-82-1SO" secondAttribute="bottom" constant="20" id="eHz-84-4ZR"/>
+                <constraint firstItem="tJN-5N-g1o" firstAttribute="top" secondItem="57A-sX-FvQ" secondAttribute="bottom" constant="10" id="13I-gM-hi2"/>
+                <constraint firstItem="57A-sX-FvQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="4Ih-4Q-97Y"/>
+                <constraint firstAttribute="trailing" secondItem="tJN-5N-g1o" secondAttribute="trailing" constant="30" id="OsJ-W6-gl2"/>
+                <constraint firstItem="eVq-xe-26G" firstAttribute="top" secondItem="57A-sX-FvQ" secondAttribute="bottom" constant="30" id="WP3-fU-MS5"/>
+                <constraint firstItem="eVq-xe-26G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ZEM-re-rMb"/>
+                <constraint firstAttribute="trailing" secondItem="57A-sX-FvQ" secondAttribute="trailing" id="a8u-yg-vcP"/>
+                <constraint firstItem="57A-sX-FvQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="caD-rm-jVn"/>
+                <constraint firstItem="tJN-5N-g1o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="lll-mw-Ukv"/>
+                <constraint firstAttribute="trailing" secondItem="eVq-xe-26G" secondAttribute="trailing" constant="30" id="pUO-0g-est"/>
             </constraints>
             <point key="canvasLocation" x="523" y="251"/>
         </view>
     </objects>
     <resources>
         <image name="Bund.bundle/images/address.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/login_bt.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/phone.png" width="360" height="480"/>
+        <image name="Bund.bundle/images/sent_name.png" width="360" height="480"/>
         <image name="Bund.bundle/images/textview_line.png" width="360" height="480"/>
     </resources>
 </document>

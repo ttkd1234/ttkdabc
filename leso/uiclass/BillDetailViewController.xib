@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillDetailViewController">
@@ -13,7 +13,56 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jre-iv-v9w" userLabel="签收">
+                    <rect key="frame" x="0.0" y="30" width="600" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="签收人是：本人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-vA-qnz" userLabel="签收人">
+                            <rect key="frame" x="153" y="7" width="140" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2015-04-08 11:25:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UU-lC-DR0" userLabel="签收时间">
+                            <rect key="frame" x="153" y="31" width="178" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/bill_sign.png" translatesAutoresizingMaskIntoConstraints="NO" id="vhZ-w2-BGU" userLabel="签收图片">
+                            <rect key="frame" x="88" y="7" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="fcU-XS-01l"/>
+                                <constraint firstAttribute="width" constant="45" id="zsU-n3-51v"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2UU-lC-DR0" firstAttribute="top" secondItem="1ga-vA-qnz" secondAttribute="bottom" constant="3" id="7YO-5i-8DZ"/>
+                        <constraint firstItem="1ga-vA-qnz" firstAttribute="leading" secondItem="vhZ-w2-BGU" secondAttribute="trailing" constant="10" id="Gqx-La-WhV"/>
+                        <constraint firstAttribute="height" constant="65" id="bg0-hh-5Jd"/>
+                        <constraint firstItem="vhZ-w2-BGU" firstAttribute="leading" secondItem="Jre-iv-v9w" secondAttribute="leading" constant="30" id="uCw-us-YgW"/>
+                        <constraint firstItem="2UU-lC-DR0" firstAttribute="leading" secondItem="vhZ-w2-BGU" secondAttribute="trailing" constant="10" id="wEp-J3-Poe"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Vqo-6D-bD6">
+                    <rect key="frame" x="0.0" y="118" width="600" height="296"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jre-iv-v9w" secondAttribute="trailing" id="BVQ-Xg-jqb"/>
+                <constraint firstAttribute="trailing" secondItem="Vqo-6D-bD6" secondAttribute="trailing" id="PbB-5C-QL1"/>
+                <constraint firstItem="Jre-iv-v9w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k3E-Gf-YYc"/>
+                <constraint firstItem="Vqo-6D-bD6" firstAttribute="top" secondItem="Jre-iv-v9w" secondAttribute="bottom" constant="10" id="o5t-Ah-cUe"/>
+                <constraint firstItem="Vqo-6D-bD6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rjM-mT-ytA"/>
+                <constraint firstItem="Jre-iv-v9w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="vfb-De-UVk"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Bund.bundle/images/bill_sign.png" width="360" height="480"/>
+    </resources>
 </document>

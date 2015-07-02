@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearbyLocationViewController">
@@ -13,7 +13,56 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIH-sH-njZ" userLabel="map">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="542"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VdS-oC-h5a" userLabel="位置">
+                    <rect key="frame" x="30" y="550" width="540" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bund.bundle/images/pointag.png" translatesAutoresizingMaskIntoConstraints="NO" id="qNb-ug-UOp">
+                            <rect key="frame" x="120" y="9" width="18" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="4zF-5P-p89"/>
+                                <constraint firstAttribute="width" constant="18" id="QZH-vY-NlR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="您所在的位置：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWc-W8-3Cf">
+                            <rect key="frame" x="148" y="11" width="99" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="位置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymi-3s-le5">
+                            <rect key="frame" x="244" y="11" width="41" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.08235294118" green="0.61960784310000006" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ymi-3s-le5" firstAttribute="leading" secondItem="kWc-W8-3Cf" secondAttribute="trailing" id="AhU-7v-0Rf"/>
+                        <constraint firstItem="qNb-ug-UOp" firstAttribute="leading" secondItem="VdS-oC-h5a" secondAttribute="leading" id="OqI-fQ-c4v"/>
+                        <constraint firstItem="kWc-W8-3Cf" firstAttribute="leading" secondItem="qNb-ug-UOp" secondAttribute="trailing" constant="5" id="nAU-Ze-nvu"/>
+                        <constraint firstAttribute="trailing" secondItem="Ymi-3s-le5" secondAttribute="trailing" id="xQr-ly-552"/>
+                        <constraint firstAttribute="height" constant="50" id="ytB-vQ-hyH"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VdS-oC-h5a" secondAttribute="bottom" id="5zh-oG-zgn"/>
+                <constraint firstItem="VdS-oC-h5a" firstAttribute="top" secondItem="sIH-sH-njZ" secondAttribute="bottom" id="T4k-z4-mX0"/>
+                <constraint firstItem="sIH-sH-njZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hzt-jD-yDM"/>
+                <constraint firstAttribute="trailing" secondItem="sIH-sH-njZ" secondAttribute="trailing" id="kbt-9i-HS4"/>
+                <constraint firstAttribute="centerX" secondItem="VdS-oC-h5a" secondAttribute="centerX" id="wok-cR-0F6"/>
+            </constraints>
+            <point key="canvasLocation" x="102" y="286"/>
         </view>
     </objects>
+    <resources>
+        <image name="Bund.bundle/images/pointag.png" width="360" height="480"/>
+    </resources>
 </document>
