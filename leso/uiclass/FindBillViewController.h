@@ -8,7 +8,8 @@
 
 #import "CurViewController.h"
 #import "TrackReq.h"
-@interface FindBillViewController : CurViewController
+#import "ZBarSDK.h"
+@interface FindBillViewController : CurViewController< ZBarReaderDelegate>
 {
    TrackReq *_trackreq;
 }
