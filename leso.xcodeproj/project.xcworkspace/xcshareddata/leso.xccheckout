@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2CF8D471-5FD8-4B6F-9D33-D26097F558DD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>leso</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F6B7C0A24B3E1A74BEA6145DCFA6703C16E382B0</key>
+		<string>https://github.com/ttkd1234/ttkdmaster.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>leso.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F6B7C0A24B3E1A74BEA6145DCFA6703C16E382B0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ttkd1234/ttkdmaster.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F6B7C0A24B3E1A74BEA6145DCFA6703C16E382B0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F6B7C0A24B3E1A74BEA6145DCFA6703C16E382B0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>leso</string>
+		</dict>
+	</array>
+</dict>
+</plist>

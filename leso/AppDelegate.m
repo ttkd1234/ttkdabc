@@ -34,6 +34,7 @@
     }*/
     _tabBarController = [[AKTabBarController alloc] initWithTabBarHeight:(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 70 : 50];
     [_tabBarController setMinimumHeightToDisplayTitle:40.0];
+    [_tabBarController setTabTitleIsHidden:NO];
     MTViewController *mtvc = [[MTViewController alloc] init];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mtvc];
